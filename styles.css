@@ -1,25 +1,22 @@
 /* General Reset */
-* {
+body {
+  background-image: url("/assets/images/background.png");
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background image fixed in place when scrolling */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Example of setting a default font */
 }
 
 /* Header Section */
 header {
-  background-color: #201e43;
-  padding: 15px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 18px 68px;
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -28,22 +25,22 @@ nav {
 }
 
 .search-icon input[type="search"] {
-  padding: 8px 12px;
+  padding: 13px 12px;
   border: 1px solid #ccc;
   border-radius: 20px;
   outline: none;
-  width: 200px;
-  transition: width 0.1s ease-in-out;
+  width: 240px;
+  margin-left: 17px;
 }
 
-.search-icon input[type="search"]:focus {
-  width: 210px;
+.navbar {
+  margin-right: 3px;
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .navbar ul a {
@@ -51,18 +48,24 @@ nav {
   color: #333;
 }
 
-.navbar ul a :hover {
-  color: #ffa500;
+.navbar ul a:hover {
+  color: #0037ff;
   text-decoration: underline;
 }
 
 .navbar ul li {
   padding: 8px 16px;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.hire-button button {
-  background-color: #007bff;
+#hire-btn {
+  margin-left: 50px;
+}
+
+#hire-btn #btn {
+  background-color: #9b1f53;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -71,8 +74,8 @@ nav {
   transition: background-color 0.3s ease;
 }
 
-.hire-button button:hover {
-  background-color: #0056b3;
+#hire-btn #btn:hover {
+  background-color: #5c6bab;
 }
 
 .main-logo img {
@@ -96,13 +99,87 @@ nav {
     gap: 10px;
   }
 
-  .hire-button {
+  #hire-btn {
     margin-top: 10px;
   }
 }
 
-/* Footer */
+hr {
+  width: 900px;
+  margin-top: 5px;
+  border: 1.5px solid #9b1f53;
+}
 
+/* Start Main */
+.left-side {
+  color: white;
+}
+
+.left-side #first {
+  display: inline;
+  margin-top: 20px;
+  font-size: 50px;
+  margin: 0 0 0 70px;
+}
+
+.left-side #second {
+  display: inline;
+  margin-top: 20px;
+  font-size: 50px;
+  margin: 0 0 0 175px;
+}
+
+.left-side p {
+  margin: 30px 0 70px 65px;
+  width: 567px;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+#circle-btn {
+  display: flex;
+  align-items: center;
+  padding: 18px 35px;
+  background-color: #9b1f53; /* Button background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 0 65px;
+}
+
+#circle {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* Circle color */
+  border-radius: 50%;
+  margin-right: 10px; /* Space between the circle and text */
+}
+
+#circle-btn:hover {
+  background-color: #5c6bab; /* Button hover color */
+}
+
+#right-side {
+  height: 100%; /* Set this as needed based on your layout */
+}
+
+#right-side img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 380px;
+  width: 450px;
+  object-fit: cover;
+  margin-top: 154px;
+  margin-right: 120px;
+}
+
+/* End Main */
+
+/* Footer */
 footer {
   margin-top: 500px;
   background-color: #333;
